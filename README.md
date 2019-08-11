@@ -2,14 +2,13 @@
 
 ## 介绍
 Tmux是一个终端会话工具，它可以永久保存会话的状态。在一个会话可以创建多个窗口，一个窗口又可以创建多个栅格，栅格的大小随意调整。
-![tmux](https://github.com/UpTownCat/tmux-conf/blob/master/tmux.png)
 
 ## 常用命令
     Tmux输入命令的时候需要使用前缀，默认前缀是Ctrl+b，如果设置了vi模式会和翻页快捷键冲突，建议使用Ctrl+z作为命令前缀。
 ### 基本命令
     - tmux new -s test_session: 新建session
     - tmux a -t test_sesion: 进入test_session
-    - tmux source-file ~/.tmux.conf: 加载配置文件([我的配置文件](https://github.com/UpTownCat/tmux-conf/blob/master/.tmux.conf))
+    - tmux source-file ~/.tmux.conf: 加载配置文件 [我的配置文件](https://github.com/UpTownCat/tmux-conf/blob/master/.tmux.conf)
     - tmux ls: 列出所有session
 ### 会话管理
     - prefix + d: 离开当前session
