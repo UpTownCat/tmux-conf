@@ -27,7 +27,7 @@ Tmux是一个终端会话工具，它可以永久保存会话的状态。在一�
 - prefix + k: 移动到下边的pane
 - prefix + l: 移动到右边的pane
 - prefix + z: 当前pane最大化或恢复原来大小
-- preifx + q: 显示pane的编号，输入编号将会切换到对应的pane
+- prefix + q: 显示pane的编号，输入编号将会切换到对应的pane
 - prefix + t: 显示时钟
 - prefix + x: 强行退出pane
 
