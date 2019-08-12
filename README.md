@@ -4,7 +4,7 @@
 Tmux是一个终端会话工具，它可以永久保存会话的状态。在一个会话可以创建多个窗口，一个窗口又可以创建多个栅格，栅格的大小随意调整。
 ![tmux](https://github.com/UpTownCat/tmux-conf/blob/master/tmux.png)
 ## 常用命令
-    Tmux输入命令的时候需要使用前缀，默认前缀是Ctrl+b，如果设置了vi模式会和翻页快捷键冲突，建议使用Ctrl+z作为命令前缀。
+Tmux输入命令的时候需要使用前缀，默认前缀是Ctrl+b，如果设置了vi模式会和翻页快捷键冲突，建议使用Ctrl+z作为命令前缀。
 ### 基本命令
 - tmux new -s test_session: 新建session
 - tmux a -t test_sesion: 进入test_session
@@ -33,7 +33,7 @@ Tmux是一个终端会话工具，它可以永久保存会话的状态。在一�
 
 `正常情况下使用Ctrl + d或者exit就可以退出pane`
 ### 插件管理
-- tmux-tpm是一个插件管理工具，使用它可以更加方便地安装和管理插件。
+- tmux-plugins/tmux-tpm是一个插件管理工具，使用它可以更加方便地安装和管理插件。
     1. git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
     2. 在配置文件加入这些内容
     ``` 
@@ -51,15 +51,15 @@ Tmux是一个终端会话工具，它可以永久保存会话的状态。在一�
     4. 安装新插件时在配置加一行，再更新配置文件就行了
                             
     ` set -g @plugin 'git@bitbucket.com/user/plugin `
-- tmux-sensible: 常用的配置
-- tmux-resurrect: 恢复tmux状态
-- tmux-continuum: 自动保存tmux状态，关机之后可以恢复
-- tmux-copycat: 正则搜索和快速匹配
-- tmux-yank: 复制高亮内容到剪贴板
-- tmux-open: 快速打开高亮文件或者url
-- tmux-pain-control: 控制pane的插件
-- tmux-prefix-highlight: 输入前缀高亮提示
-- tmux-colors-solarized: 颜色主题
+- [tmux-plugins/tmux-sensible](https://github.com/tmux-plugins/tpm): 常用的配置
+- [tmux-plugins/tmux-resurrect](https://github.com/tmux-plugins/tmux-resurrect): 恢复tmux状态
+- [tmux-plugins/tmux-continuum](https://github.com/tmux-plugins/tmux-continuum): 自动保存tmux状态，关机之后可以恢复
+- [tmux-plugins/tmux-copycat](https://github.com/tmux-plugins/tmux-copycat): 正则搜索和快速匹配
+- [tmux-plugins/tmux-yank](https://github.com/tmux-plugins/tmux-yank): 复制高亮内容到剪贴板
+- [tmux-plugins/tmux-open](https://github.com/tmux-plugins/tmux-open): 快速打开高亮文件或者url
+- [tmux-plugins/tmux-pain-control](https://github.com/tmux-plugins/tmux-pain-control): 控制pane的插件
+- [tmux-plugins/tmux-prefix-highlight](https://github.com/tmux-plugins/tmux-prefix-highlight): 输入前缀高亮提示
+- [seebi/tmux-colors-solarized](https://github.com/seebi/tmux-colors-solarized): 颜色主题
 ## 总结
 - 持久化session，断网也可以再次恢复到原来的状态
 - 设置vi模式之后可以使用vim的方式控制屏幕的滚动，也可以进行复制和粘贴内容
